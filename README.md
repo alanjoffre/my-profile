@@ -20,4 +20,4 @@ Figma <br><br>
 
 Perfil de cartão de visitas agregando links externos.
 
-[Acesse o site online](https://alanjoffre.github.io/profile-project/)
+[Acesse o site online](https://alanjoffre.github.io/my-profile/)
