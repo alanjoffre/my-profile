@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<title>Currículo — Alan Joffre</title>
+<style>
+  @page { size: A4; margin: 14mm 14mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --violet:#6d28d9; --cyan:#0891b2; --ink:#1f2937; --dim:#5b6470; --line:#e5e7eb; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 10.2px; line-height: 1.45; }
+
+  header { border-bottom: 2px solid var(--violet); padding-bottom: 10px; margin-bottom: 12px; }
+  h1 { font-size: 23px; font-weight: 700; letter-spacing: -0.3px; }
+  .role { font-size: 11.5px; font-weight: 600; margin-top: 2px;
+          background: linear-gradient(90deg, var(--violet), var(--cyan));
+          -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .contact { margin-top: 7px; font-size: 9.4px; color: var(--dim); }
+  .contact span { white-space: nowrap; }
+  .sep { color: var(--violet); margin: 0 6px; }
+
+  section { margin-top: 13px; }
+  h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--violet);
+       border-bottom: 1px solid var(--line); padding-bottom: 3px; margin-bottom: 7px; }
+
+  .job { margin-bottom: 9px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; }
+  .job-title { font-size: 10.8px; font-weight: 700; }
+  .job-meta { font-size: 9.2px; color: var(--dim); white-space: nowrap; }
+  .job-sub { font-size: 9.4px; color: var(--dim); font-style: italic; margin-bottom: 3px; }
+  ul { list-style: none; margin: 3px 0 0; }
+  li { position: relative; padding-left: 12px; margin-bottom: 2.5px; }
+  li::before { content: "▸"; position: absolute; left: 0; color: var(--cyan); font-size: 8px; top: 1px; }
+  .stack-line { font-size: 9px; color: var(--dim); margin-top: 3px; }
+  .stack-line b { color: var(--ink); }
+
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 22px; }
+  .skill-row { font-size: 9.5px; margin-bottom: 3px; }
+  .skill-row b { color: var(--violet); }
+  strong { font-weight: 700; }
+  .accent { color: var(--cyan); font-weight: 600; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Alan Joffre</h1>
+    <div class="role">Data Engineer · Analytics Engineer</div>
+    <div class="contact">
+      <span>📍 São Paulo, Brasil (GMT-3)</span><span class="sep">|</span>
+      <span>✉ alanjoffre@outlook.com</span><span class="sep">|</span>
+      <span>📱 +55 11 91547-2650</span><span class="sep">|</span>
+      <span>in/alanjoffre</span><span class="sep">|</span>
+      <span>github.com/alanjoffre</span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Resumo Profissional</h2>
+    <p>Engenheiro de Dados / Analytics Engineer com foco em <strong>produtos de dados end-to-end</strong> — da arquitetura
+    <strong>lakehouse</strong> à entrega de análises prontas para decisão corporativa. Experiência prática em arquitetura
+    <strong>Medallion</strong> (Databricks, Unity Catalog, Delta Lake) modelada com <strong>dbt</strong>, pipelines orquestrados
+    (Airflow), <strong>Data Quality</strong>, lineage e governança ponta a ponta. Base sólida em Machine Learning aplicado,
+    transformando desafios analíticos em soluções escaláveis e orientadas a resultado.</p>
+  </section>
+
+  <section>
+    <h2>Experiência Profissional</h2>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Data Engineer — Ser Mais Digital <span style="font-weight:400;color:var(--dim)">(Autônomo)</span></span>
+        <span class="job-meta">fev/2025 – Presente</span>
+      </div>
+      <div class="job-sub">São Paulo (Híbrido) · Cliente de mobilidade e pagamentos — produto de auditoria e simulação de vale-pedágio</div>
+      <ul>
+        <li>Concebi e implementei a arquitetura <strong>Medallion</strong> (Bronze/Silver/Gold) completa em <strong>Databricks</strong> (Unity Catalog + Delta Lake) modelada com <strong>dbt</strong>, com pipelines de retry/alertas processando dezenas de milhões de transações/mês, consolidados em camadas com bilhões de linhas derivadas.</li>
+        <li>Reduzi em <span class="accent">~90%</span> o tempo de apuração de casos analíticos recorrentes (de até 20 dias para 2 dias), liberando o time para análise em vez de operação manual.</li>
+        <li>Análises e relatórios automatizados entregues recorrentemente à auditoria, com governança de acesso, logging, trilha de auditoria e versionamento.</li>
+        <li>Data Quality e governança: dbt tests/contracts, masking de PII, backup/restore versionado e KPIs auditáveis com rastreabilidade ponta a ponta.</li>
+        <li>Portfólio público OSS espelhando esta arquitetura (dbt + Airflow + dlt + Soda, CI/CD e dashboard ao vivo) como prova verificável do stack.</li>
+      </ul>
+      <div class="stack-line"><b>Stack:</b> Python · SQL · dbt · Databricks (UC, Delta, Medallion) · PySpark · Spark · Apache Airflow · Kafka · DuckDB · Azure</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Cientista de Dados — SWM Consultoria <span style="font-weight:400;color:var(--dim)">(Autônomo)</span></span>
+        <span class="job-meta">out/2023 – jan/2025</span>
+      </div>
+      <ul>
+        <li>Projetos completos de Machine Learning: classificação, clusterização, previsão e séries temporais, com impacto direto em custos e operações.</li>
+        <li>Pipelines de experimentação e tuning (Scikit-learn, XGBoost, LightGBM) com Explainable AI (SHAP, LIME).</li>
+        <li>Redução de <span class="accent">20%</span> em custos logísticos com séries temporais; <span class="accent">+18%</span> de acurácia em detecção de anomalias (YOLOv5, OCR) e <span class="accent">40%</span> menos esforço manual.</li>
+      </ul>
+      <div class="stack-line"><b>Stack:</b> Python · Scikit-learn · XGBoost · LightGBM · SHAP/LIME · Pandas · Airflow · Power BI</div>
+    </div>
+
+    <div class="job">
+      <div class="job-head">
+        <span class="job-title">Data Engineer — SWM Consultoria <span style="font-weight:400;color:var(--dim)">(Autônomo)</span></span>
+        <span class="job-meta">set/2022 – ago/2023</span>
+      </div>
+      <ul>
+        <li>Pipelines <strong>ELT</strong> escaláveis, reduzindo o tempo de ingestão/carga em até <span class="accent">50%</span>; processamento de grandes volumes com Apache Spark e AWS Redshift.</li>
+        <li>Arquitetura resiliente com S3, Glue, Redshift e orquestração tolerante a falhas; tuning de SQL (Redshift, PostgreSQL, BigQuery) até <span class="accent">70%</span> mais rápido.</li>
+        <li>Automação de ingestão/transformação com Python e jobs agendados, eliminando falhas manuais.</li>
+      </ul>
+      <div class="stack-line"><b>Stack:</b> Python · SQL · Spark · PySpark · Kafka · AWS (S3, Glue, Redshift, EC2) · PostgreSQL · BigQuery · Airflow</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projetos em Destaque</h2>
+    <ul>
+      <li><strong>toll-analytics-platform</strong> (open-source): plataforma de dados end-to-end — dlt → dbt (Medallion, contracts, Semantic Layer, dbt Mesh) → Airflow + Cosmos → Soda → OpenLineage → Evidence.dev; CI/CD + Terraform.</li>
+      <li><strong>Aira</strong> (SaaS em produção na AWS): backend assíncrono Python/FastAPI, PostgreSQL multi-org (migração em produção sem perda), integração LLM (Anthropic Claude) com controle de custo, CI/CD com SAST e segurança ponta a ponta.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Formação & Certificações</h2>
+    <div class="grid2">
+      <div>
+        <div class="skill-row"><b>Bacharelado em Ciência de Dados</b></div>
+        <div class="skill-row" style="color:var(--dim)">Universidade Anhanguera — jan/2024 a jun/2026</div>
+      </div>
+      <div>
+        <div class="skill-row">IBM Data Science Professional Certificate</div>
+        <div class="skill-row">Databricks Machine Learning Professional (2025)</div>
+        <div class="skill-row">TensorFlow Developer Certification (2024)</div>
+        <div class="skill-row">AWS Certified Machine Learning – Specialty</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Habilidades Técnicas</h2>
+    <div class="skill-row"><b>Lakehouse & Data Eng:</b> dbt · Databricks (Unity Catalog, Delta Lake) · Spark/PySpark · Apache Airflow · dlt · Soda · ELT/ETL · Medallion · Data Quality · Lineage</div>
+    <div class="skill-row"><b>Cloud & Infra:</b> AWS (S3, Glue, Redshift, EC2) · Azure · Docker · Terraform · GitHub Actions (CI/CD)</div>
+    <div class="skill-row"><b>Dados:</b> SQL · PostgreSQL · BigQuery · DuckDB</div>
+    <div class="skill-row"><b>Machine Learning:</b> Scikit-learn · XGBoost · LightGBM · SHAP/LIME · MLflow · séries temporais · visão computacional</div>
+    <div class="skill-row"><b>Idiomas:</b> Português (nativo) · Inglês técnico (leitura de documentação, APIs e artigos)</div>
+  </section>
+</body>
+</html>
