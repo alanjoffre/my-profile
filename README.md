@@ -1,23 +1,22 @@
-# Alan Joffre
-My profile: Alan Joffre
+# 🌐 my-profile — Alan Joffre
 
-<p align="center">
-  <img alt="mulheres-vozes-escuta" src="./assets/capa-readme.png" width="100%">
-  <img alt="mulheres-vozes-escuta" src="./assets/capa-readme-light.png" width="100%">
-</p>
-<br>
+Página pessoal (link-in-bio) de **Alan Joffre — Data Engineer / Analytics Engineer**.
+Single page em HTML/CSS/JS puro, tema dark com gradiente violeta→ciano, hospedada no GitHub Pages.
 
-# 🚀 Tecnologias
+👉 **[alanjoffre.github.io/my-profile](https://alanjoffre.github.io/my-profile/)**
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+## ✨ Destaques
 
-HTML e CSS <br>
-JavaScript <br>
-Git e Github <br>
-Figma <br><br>
+- Hero com avatar, posicionamento atual e status "aberto a oportunidades"
+- Stack em destaque (Python, dbt, Databricks, Delta Lake, Airflow, AWS…)
+- Cards dos projetos principais (toll-analytics-platform, Aira, data-science)
+- Links para LinkedIn, currículo (PDF) e GitHub
+- 100% responsivo · sem dependências · carregamento leve (assets < 700 KB)
 
-# 💻 Projeto
+## 🚀 Tecnologias
 
-Perfil de cartão de visitas agregando links externos.
+HTML · CSS (gradientes, glassmorphism, grid) · JavaScript · Git/GitHub
 
-[Acesse o site online](https://alanjoffre.github.io/my-profile/)
+## 💻 Rodar localmente
+
+Abra o `index.html` no navegador — não há build nem dependências.
