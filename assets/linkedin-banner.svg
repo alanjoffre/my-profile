@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1584 396" width="1584" height="396" role="img" aria-label="Alan Joffre — Data Engineer, Analytics Engineer, AI Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0c1426"/>
+      <stop offset="0.55" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0a0f1a"/>
+    </linearGradient>
+    <linearGradient id="ink" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="0.5" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glowV" cx="0.2" cy="0.15" r="0.7">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowC" cx="0.85" cy="0.9" r="0.7">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1584" height="396" fill="url(#bg)"/>
+  <rect width="1584" height="396" fill="url(#glowV)"/>
+  <rect width="1584" height="396" fill="url(#glowC)"/>
+
+  <!-- faint node decoration (top corners, out of the avatar zone) -->
+  <g opacity="0.5" fill="none" stroke="#33456b" stroke-width="1.4">
+    <path d="M1360 70 L1430 96 L1500 60"/>
+    <path d="M1430 96 L1440 160"/>
+    <path d="M180 70 L120 110"/>
+  </g>
+  <g>
+    <circle cx="1360" cy="70" r="6" fill="#0d1117" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="1430" cy="96" r="7" fill="#0d1117" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="1500" cy="60" r="6" fill="#0d1117" stroke="#a78bfa" stroke-width="2"/>
+    <circle cx="1440" cy="160" r="5" fill="#0d1117" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="180" cy="70" r="5" fill="#0d1117" stroke="#22d3ee" stroke-width="2"/>
+    <circle cx="120" cy="110" r="4" fill="#818cf8" opacity="0.7"/>
+  </g>
+
+  <!-- kicker -->
+  <text x="792" y="118" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="7" fill="#67e8f9">ALAN JOFFRE</text>
+
+  <!-- roles -->
+  <text x="792" y="180" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.3" fill="url(#ink)">Data Engineer &#183; Analytics Engineer &#183; AI Engineer</text>
+
+  <!-- tagline -->
+  <text x="792" y="222" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="19" font-weight="500" fill="#c4cee0">do lakehouse ao serving de IA em produ&#231;&#227;o &#183; avalia&#231;&#227;o como gate de CI</text>
+
+  <!-- stack line -->
+  <text x="792" y="270" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#93a0b6">Lakehouse &#183; dbt &#183; Databricks &#183; PySpark &#183; Airflow&#8195;|&#8195;RAG &#183; fine-tuning &#183; vLLM &#183; LangGraph &#183; MLOps</text>
+
+  <!-- divider -->
+  <line x1="592" y1="300" x2="992" y2="300" stroke="url(#ink)" stroke-width="2" opacity="0.55" stroke-linecap="round"/>
+
+  <!-- links -->
+  <text x="792" y="336" text-anchor="middle" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" font-weight="600" fill="#7f8ba3">github.com/alanjoffre&#160;&#160;&#183;&#160;&#160;huggingface.co/spaces/alanjoffre/rodoia-rag</text>
+
+  <!-- baseline road motif -->
+  <line x1="120" y1="366" x2="1464" y2="366" stroke="#22d3ee" stroke-width="2" opacity="0.20"
+        stroke-dasharray="28 20" stroke-linecap="round"/>
+</svg>
