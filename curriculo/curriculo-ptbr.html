@@ -4,10 +4,10 @@
 <meta charset="UTF-8" />
 <title>Currículo — Alan Joffre</title>
 <style>
-  @page { size: A4; margin: 14mm 14mm; }
+  @page { size: A4; margin: 11mm 13mm; }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   :root { --violet:#6d28d9; --cyan:#0891b2; --ink:#1f2937; --dim:#5b6470; --line:#e5e7eb; }
-  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 10.2px; line-height: 1.45; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: var(--ink); font-size: 10.2px; line-height: 1.38; }
 
   header { border-bottom: 2px solid var(--violet); padding-bottom: 10px; margin-bottom: 12px; }
   h1 { font-size: 23px; font-weight: 700; letter-spacing: -0.3px; }
@@ -18,7 +18,7 @@
   .contact span { white-space: nowrap; }
   .sep { color: var(--violet); margin: 0 6px; }
 
-  section { margin-top: 13px; }
+  section { margin-top: 10px; }
   h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--violet);
        border-bottom: 1px solid var(--line); padding-bottom: 3px; margin-bottom: 7px; }
 
@@ -43,7 +43,7 @@
 <body>
   <header>
     <h1>Alan Joffre</h1>
-    <div class="role">Data Engineer · Analytics Engineer</div>
+    <div class="role">Data Engineer · Analytics Engineer · AI Engineer</div>
     <div class="contact">
       <span>📍 São Paulo, Brasil (GMT-3)</span><span class="sep">|</span>
       <span>✉ alanjoffre@outlook.com</span><span class="sep">|</span>
@@ -56,10 +56,11 @@
   <section>
     <h2>Resumo Profissional</h2>
     <p>Engenheiro de Dados / Analytics Engineer com foco em <strong>produtos de dados end-to-end</strong> — da arquitetura
-    <strong>lakehouse</strong> à entrega de análises prontas para decisão corporativa. Experiência prática em arquitetura
-    <strong>Medallion</strong> (Databricks, Unity Catalog, Delta Lake) modelada com <strong>dbt</strong>, pipelines orquestrados
-    (Airflow), <strong>Data Quality</strong>, lineage e governança ponta a ponta. Base sólida em Machine Learning aplicado,
-    transformando desafios analíticos em soluções escaláveis e orientadas a resultado.</p>
+    <strong>lakehouse</strong> (Databricks, Unity Catalog, Delta Lake, <strong>dbt</strong>) à entrega de análises prontas para
+    decisão, com pipelines orquestrados (Airflow), <strong>Data Quality</strong>, lineage e governança ponta a ponta.
+    Em transição consolidada para <strong>AI Engineer</strong>: RAG avaliado com rigor estatístico, fine-tuning de LLM
+    (<strong>QLoRA/vLLM</strong>), agentes (<strong>LangGraph</strong>) e <strong>MLOps</strong> com avaliação como gate de CI —
+    provado no projeto open-source <strong>RodoIA</strong>.</p>
   </section>
 
   <section>
@@ -67,7 +68,7 @@
 
     <div class="job">
       <div class="job-head">
-        <span class="job-title">Data Engineer — Ser Mais Digital <span style="font-weight:400;color:var(--dim)">(Autônomo)</span></span>
+        <span class="job-title">Data Engineer · AI Engineer — Ser Mais Digital <span style="font-weight:400;color:var(--dim)">(Autônomo)</span></span>
         <span class="job-meta">fev/2025 – Presente</span>
       </div>
       <div class="job-sub">São Paulo (Híbrido) · Cliente de mobilidade e pagamentos — produto de auditoria e simulação de vale-pedágio</div>
@@ -77,8 +78,10 @@
         <li>Análises e relatórios automatizados entregues recorrentemente à auditoria, com governança de acesso, logging, trilha de auditoria e versionamento.</li>
         <li>Data Quality e governança: dbt tests/contracts, masking de PII, backup/restore versionado e KPIs auditáveis com rastreabilidade ponta a ponta.</li>
         <li>Portfólio público OSS espelhando esta arquitetura (dbt + Airflow + dlt + Soda, CI/CD e dashboard ao vivo) como prova verificável do stack.</li>
+        <li><b>Iniciativa de IA aplicada (projetos próprios, em paralelo):</b> <strong>RodoIA</strong> — RAG, fine-tuning QLoRA/vLLM, agente LangGraph e MLOps com gate de CI; e <strong>Aira</strong> — integração de LLM (Claude) com controle de custo (ver Projetos).</li>
       </ul>
-      <div class="stack-line"><b>Stack:</b> Python · SQL · dbt · Databricks (UC, Delta, Medallion) · PySpark · Spark · Apache Airflow · Kafka · DuckDB · Azure</div>
+      <div class="stack-line"><b>Stack (cliente):</b> Python · SQL · dbt · Databricks (UC, Delta, Medallion) · PySpark · Spark · Apache Airflow · Kafka · DuckDB · Azure</div>
+      <div class="stack-line"><b>Stack (IA):</b> Python · PyTorch · Hugging Face/Transformers · QLoRA · vLLM · LangGraph · Qdrant · MLflow · DVC</div>
     </div>
 
     <div class="job">
@@ -111,6 +114,7 @@
   <section>
     <h2>Projetos em Destaque</h2>
     <ul>
+      <li><strong>RodoIA</strong> (open-source) ⭐: Engenharia de IA de ponta a ponta sobre dados públicos da ANTT — RAG avaliado (hit@5, <strong>κ humano inter-anotador</strong>), fine-tuning QLoRA (<strong>F1 0,13→0,77</strong>, NER jurídico) em vLLM, agente LangGraph e MLOps com avaliação como gate de CI. Demo pública ao vivo.</li>
       <li><strong>toll-analytics-platform</strong> (open-source): plataforma de dados end-to-end — dlt → dbt (Medallion, contracts, Semantic Layer, dbt Mesh) → Airflow + Cosmos → Soda → OpenLineage → Evidence.dev; CI/CD + Terraform.</li>
       <li><strong>Aira</strong> (SaaS em produção na AWS): backend assíncrono Python/FastAPI, PostgreSQL multi-org (migração em produção sem perda), integração LLM (Anthropic Claude) com controle de custo, CI/CD com SAST e segurança ponta a ponta.</li>
     </ul>
@@ -118,7 +122,9 @@
 
   <section>
     <h2>Formação Acadêmica</h2>
-    <div class="skill-row"><b>Bacharelado em Ciência de Dados</b> — Universidade Anhanguera <span style="color:var(--dim)">(jan/2024 a jun/2026)</span></div>
+    <div class="skill-row"><b>Pós-graduação — Engenharia de Software com Inteligência Artificial</b> — Universidade Anhanguera <span style="color:var(--dim)">(jul/2026 a jan/2027)</span></div>
+    <div class="skill-row" style="color:var(--dim)">RAG, agentes com LangGraph, LLMs, MLOps e deploy de modelos em produção — consolidando a transição para AI Engineer.</div>
+    <div class="skill-row" style="margin-top:4px"><b>Bacharelado em Ciência de Dados</b> — Universidade Anhanguera <span style="color:var(--dim)">(jan/2024 a jun/2026)</span></div>
     <div class="skill-row" style="color:var(--dim)">Foco em modelagem estatística, machine learning, engenharia de dados e visualização analítica. Disciplinas-chave: Python, SQL, estatística aplicada, big data, bancos relacionais e NoSQL, pipelines ETL/ELT.</div>
   </section>
 
@@ -127,6 +133,7 @@
     <div class="skill-row"><b>Lakehouse & Data Eng:</b> dbt · Databricks (Unity Catalog, Delta Lake) · Spark/PySpark · Apache Airflow · dlt · Soda · ELT/ETL · Medallion · Data Quality · Lineage</div>
     <div class="skill-row"><b>Cloud & Infra:</b> AWS (S3, Glue, Redshift, EC2) · Azure · Docker · Terraform · GitHub Actions (CI/CD)</div>
     <div class="skill-row"><b>Dados:</b> SQL · PostgreSQL · BigQuery · DuckDB</div>
+    <div class="skill-row"><b>IA / LLM Engineering:</b> RAG · LLM · Fine-tuning (QLoRA) · vLLM · LangChain/LangGraph · PyTorch · Hugging Face/Transformers · Qdrant · MLOps (MLflow, DVC)</div>
     <div class="skill-row"><b>Machine Learning:</b> Scikit-learn · XGBoost · LightGBM · SHAP/LIME · MLflow · séries temporais · visão computacional</div>
     <div class="skill-row"><b>Idiomas:</b> Português (nativo) · Inglês técnico (leitura de documentação, APIs e artigos)</div>
   </section>
