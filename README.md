@@ -1,6 +1,6 @@
 # 🌐 my-profile — Alan Joffre
 
-Página pessoal (link-in-bio) de **Alan Joffre — Data Engineer / Analytics Engineer**.
+Página pessoal (link-in-bio) de **Alan Joffre — Data Engineer · Analytics Engineer · AI Engineer**.
 Single page em HTML/CSS/JS puro, tema dark com gradiente violeta→ciano, hospedada no GitHub Pages.
 
 👉 **[alanjoffre.github.io/my-profile](https://alanjoffre.github.io/my-profile/)**
@@ -8,8 +8,8 @@ Single page em HTML/CSS/JS puro, tema dark com gradiente violeta→ciano, hosped
 ## ✨ Destaques
 
 - Hero com avatar, posicionamento atual e status "aberto a oportunidades"
-- Stack em destaque (Python, dbt, Databricks, Delta Lake, Airflow, AWS…)
-- Cards dos projetos principais (toll-analytics-platform, Aira, data-science)
+- Stack em destaque (Python, dbt, Databricks, Airflow, AWS · RAG, LLM, QLoRA, vLLM, LangGraph…)
+- Cards dos projetos principais (RodoIA, toll-analytics-platform, Aira, data-science)
 - Links para LinkedIn, currículo (PDF) e GitHub
 - 100% responsivo · sem dependências · carregamento leve (assets < 700 KB)
 
