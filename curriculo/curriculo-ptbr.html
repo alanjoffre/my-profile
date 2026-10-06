@@ -114,6 +114,16 @@
     <h2>Projetos</h2>
 
     <div class="job">
+      <div class="job-head"><span class="job-title">oss-lakehouse — lakehouse sobre dados reais do GitHub (open-source)</span>
+        <span class="job-meta">github.com/alanjoffre/oss-lakehouse</span></div>
+      <ul>
+        <li>Lakehouse bronze → silver → gold em PySpark e Delta Lake sobre 2 milhões de eventos reais do GitHub, com o mesmo código local e preparado para Databricks: job multi-tarefa em bundle validado e Azure (ADLS Gen2, identidade gerenciada, Key Vault, Unity Catalog) em Terraform.</li>
+        <li>18 notebooks executados com a evidência na célula (plano físico, métricas de MERGE, skew real de 12,7% de um único ator), pacote Python com 190 testes e CI: ingestão incremental, MERGE e SCD2, streaming, Delta Lake por dentro, governança e LGPD.</li>
+        <li>IA dentro do pipeline com avaliação: classificação de PII e de títulos contra gabarito, regras de qualidade com aprovação humana e uma cascata em que uma regra simples resolve 36% dos casos sem chamar o modelo.</li>
+      </ul>
+    </div>
+
+    <div class="job">
       <div class="job-head"><span class="job-title">Toll Analytics Platform — plataforma de dados end-to-end (open-source, dados fictícios)</span>
         <span class="job-meta">GitHub · dashboard ao vivo</span></div>
       <ul>
@@ -135,7 +145,7 @@
 
     <div class="job">
       <div class="job-head"><span class="job-title">RodoIA — engenharia de IA de ponta a ponta (open-source)</span>
-        <span class="job-meta">github.com/alanjoffre/portfolio</span></div>
+        <span class="job-meta">github.com/alanjoffre/rodoia</span></div>
       <ul>
         <li>Processamento de 17,2 milhões de linhas com memória limitada; motor escolhido por benchmark (DuckDB 6,7× mais rápido que Spark, 0 divergências nos resultados).</li>
         <li>RAG avaliado sobre benchmark de terceiros (CUAD, 13.823 trechos anotados por advogados), com ganhos validados por intervalo de confiança e McNemar pareado.</li>
