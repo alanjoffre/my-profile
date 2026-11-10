@@ -90,6 +90,9 @@ h2 {
 .card p { margin: 0; font-size: 0.95rem; }
 .card .tag { font-size: 0.78rem; font-weight: 600; color: var(--accent); }
 .card .more { margin-top: 6px; }
+.card .role { margin-top: 8px; }
+.card .facts { margin-top: 6px; font-size: 0.85rem; color: var(--muted); }
+.card .role + .facts { margin-top: 10px; }
 .all { margin: 4px 0 0; font-weight: 600; }
 
 .side section + section { margin-top: 28px; }
