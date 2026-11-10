@@ -96,10 +96,14 @@ h2 {
 .side section + section { margin-top: 28px; }
 .side .card { margin-bottom: 0; }
 .side p { margin: 0; font-size: 0.95rem; }
-.stack { margin: 0; font-size: 0.95rem; }
-.stack dt { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
-.stack dd { margin: 2px 0 0; }
-.stack dd + dt { margin-top: 12px; }
+.stack {
+  margin: 0; font-size: 0.95rem;
+  display: grid; grid-template-columns: auto 1fr;
+  column-gap: 14px; row-gap: 10px;
+  align-items: baseline; align-content: center;
+}
+.stack dt { font-size: 0.85rem; font-weight: 600; color: var(--muted); }
+.stack dd { margin: 0; }
 
 footer {
   margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border);
@@ -108,7 +112,10 @@ footer {
 
 /* Computador: dois blocos lado a lado */
 @media (min-width: 760px) {
-  .grid { grid-template-columns: 1.6fr 1fr; }
+  .grid { grid-template-columns: 1.35fr 1fr; }
+  .side { display: flex; flex-direction: column; }
+  .side section:last-child { flex: 1; display: flex; flex-direction: column; }
+  .side section:last-child .stack { flex: 1; }
 }
 
 /* Celular */
