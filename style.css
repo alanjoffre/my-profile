@@ -56,7 +56,7 @@ a:focus-visible, .btn:focus-visible { outline: 2px solid var(--accent); outline-
   border: 2px solid var(--border);
 }
 h1 { margin: 0; font-size: 2.1rem; line-height: 1.15; letter-spacing: -0.01em; }
-.role { margin: 4px 0 0; font-size: 1.1rem; font-weight: 600; color: var(--accent); }
+.hero .role { margin: 4px 0 0; font-size: 1.1rem; font-weight: 600; color: var(--accent); }
 .tagline { margin: 10px 0 0; color: var(--text); }
 .meta { margin: 8px 0 0; color: var(--muted); font-size: 0.95rem; }
 .sep { color: var(--muted); margin: 0 4px; }
@@ -90,16 +90,16 @@ h2 {
 .card p { margin: 0; font-size: 0.95rem; }
 .card .tag { font-size: 0.78rem; font-weight: 600; color: var(--accent); }
 .card .more { margin-top: 6px; }
-.card .role { margin-top: 8px; }
 .card .facts { margin-top: 6px; font-size: 0.85rem; color: var(--muted); }
-.card .role + .facts { margin-top: 10px; }
 .all { margin: 4px 0 0; font-weight: 600; }
 
 .side section + section { margin-top: 28px; }
+.side .card { margin-bottom: 0; }
 .side p { margin: 0; font-size: 0.95rem; }
-.stack { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; font-size: 0.95rem; }
-.stack dt { font-weight: 600; color: var(--muted); }
-.stack dd { margin: 0; }
+.stack { margin: 0; font-size: 0.95rem; }
+.stack dt { font-size: 0.78rem; font-weight: 600; color: var(--muted); }
+.stack dd { margin: 2px 0 0; }
+.stack dd + dt { margin-top: 12px; }
 
 footer {
   margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border);
