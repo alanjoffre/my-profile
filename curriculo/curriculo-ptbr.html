@@ -11,9 +11,7 @@
 
   header { border-bottom: 2px solid var(--violet); padding-bottom: 10px; margin-bottom: 12px; }
   h1 { font-size: 23px; font-weight: 700; letter-spacing: -0.3px; }
-  .role { font-size: 11.5px; font-weight: 600; margin-top: 2px;
-          background: linear-gradient(90deg, var(--violet), var(--cyan));
-          -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+  .role { font-size: 11.5px; font-weight: 600; margin-top: 2px; color: var(--violet); }
   .contact { margin-top: 7px; font-size: 9.4px; color: var(--dim); }
   .contact span { white-space: nowrap; }
   .sep { color: var(--violet); margin: 0 6px; }
@@ -22,7 +20,7 @@
   h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--violet);
        border-bottom: 1px solid var(--line); padding-bottom: 3px; margin-bottom: 7px; }
 
-  .job { margin-bottom: 9px; }
+  .job { margin-bottom: 9px; break-inside: avoid; }
   .job-head { display: flex; justify-content: space-between; align-items: baseline; }
   .job-title { font-size: 10.8px; font-weight: 700; }
   .job-meta { font-size: 9.2px; color: var(--dim); white-space: nowrap; }
@@ -38,73 +36,83 @@
   .skill-row b { color: var(--violet); }
   strong { font-weight: 700; }
   .accent { color: var(--cyan); font-weight: 600; }
+  a { color: inherit; text-decoration: none; }
+  .group { font-size: 9.4px; font-weight: 700; color: var(--dim); margin: 6px 0 3px; }
+  .note { font-size: 9.4px; color: var(--dim); font-style: italic; margin-bottom: 4px; }
 </style>
 </head>
 <body>
   <header>
     <h1>Alan Joffre</h1>
-    <div class="role">Engenheiro de Dados e IA</div>
-    <div class="contact">Lakehouse em escala (Databricks · dbt · Delta Lake · Airflow) · Data Quality e governança · IA aplicada</div>
+    <div class="role">Engenheiro de Dados</div>
+    <div class="contact">Lakehouse (Databricks · dbt · Delta Lake · Airflow) · Data Quality e governança · IA aplicada</div>
     <div class="contact">
-      <span>📍 São Paulo, SP</span><span class="sep">|</span>
-      <span>✉ alanjoffre01@gmail.com</span><span class="sep">|</span>
-      <span>📱 (11) 91547-2650</span><span class="sep">|</span>
-      <span>linkedin.com/in/alanjoffre</span><span class="sep">|</span>
-      <span>github.com/alanjoffre/portfolio</span>
+      <span>São Paulo, SP</span><span class="sep">|</span>
+      <span>alanjoffre01@gmail.com</span><span class="sep">|</span>
+      <span><a href="https://www.linkedin.com/in/alanjoffre">linkedin.com/in/alanjoffre</a></span><span class="sep">|</span>
+      <span><a href="https://github.com/alanjoffre">github.com/alanjoffre</a></span>
     </div>
   </header>
 
   <section>
     <h2>Resumo</h2>
-    <p>Engenheiro de dados com 4 anos de experiência, com histórico de assumir produtos de dados de ponta a ponta: arquitetura,
-    modelagem, orquestração, qualidade e entrega a gestores. No projeto mais recente, desenhei e entreguei um lakehouse em
-    Databricks e dbt que processa dezenas de milhões de registros por mês e reduziu apurações de 20 para 2 dias. Trago também
-    base em ciência de dados e engenharia de IA aplicada (RAG, fine-tuning e LLM em produção), útil para plataformas de dados
-    que servem modelos e agentes.</p>
+    <p>Engenheiro de Dados com 4 anos de experiência em dados e IA, dos quais mais de 2 anos e meio em engenharia de dados:
+    arquitetura, modelagem, orquestração, qualidade e entrega a gestores. Na consultoria, desenhei e entreguei um lakehouse
+    em Databricks e dbt que processava dezenas de milhões de registros por mês e reduziu o tempo de apuração de até 20 para 2 dias.
+    Hoje sou o responsável técnico pelo desenvolvimento e pela operação da Aira, produto de IA da Noron.dev (Python/FastAPI,
+    LLM com recuperação agêntica sobre arquivos, agentes, avaliação de IA, PostgreSQL, AWS). Mantenho projetos open source
+    de dados, IA aplicada e back-end em Java.</p>
   </section>
 
   <section>
     <h2>Competências técnicas</h2>
-    <div class="skill-row"><b>Engenharia de dados:</b> Python, SQL, PySpark, Databricks (Unity Catalog, Delta Lake), dbt, Airflow, DuckDB, dlt, Kafka</div>
-    <div class="skill-row"><b>Qualidade e governança:</b> dbt tests e contracts, Soda, OpenLineage, masking de PII, trilha de auditoria</div>
-    <div class="skill-row"><b>Cloud e DevOps:</b> AWS (EC2, EBS, S3, IAM, Systems Manager, Glue, Redshift), Azure (ambiente Databricks), Docker, Terraform, GitHub Actions, CI/CD</div>
-    <div class="skill-row"><b>Bancos e backend:</b> PostgreSQL, Redshift, BigQuery, FastAPI (assíncrono)</div>
-    <div class="skill-row"><b>IA e ML:</b> LLMs (Claude), RAG, LangGraph, Qdrant, QLoRA, vLLM, PyTorch, Hugging Face, Scikit-learn, XGBoost, LightGBM</div>
-    <div class="skill-row"><b>MLOps e avaliação:</b> MLflow, DVC, avaliação estatística (IC, McNemar), gates de CI</div>
-    <div class="skill-row"><b>BI:</b> Power BI (DAX), Evidence.dev</div>
+    <div class="group">Uso profissional</div>
+    <div class="skill-row"><b>Engenharia de dados:</b> Python, SQL, Apache Spark (PySpark), Databricks (Unity Catalog, Delta Lake), dbt, Airflow, ETL/ELT, Data Warehouse e modelagem dimensional</div>
+    <div class="skill-row"><b>Bancos e cloud:</b> PostgreSQL, Redshift, BigQuery, AWS (EC2, S3, IAM, Glue), Azure (Databricks), Docker, GitHub Actions</div>
+    <div class="skill-row"><b>Qualidade e governança:</b> dbt tests e contracts, masking de PII, trilha de auditoria, KPIs auditáveis</div>
+    <div class="skill-row"><b>IA, ML e back-end:</b> LLM (Claude), RAG, FastAPI (assíncrono), Scikit-learn, XGBoost, LightGBM, visão computacional (YOLOv5, OCR), SHAP</div>
+    <div class="skill-row"><b>BI:</b> Power BI (DAX)</div>
+    <div class="group">Em projetos abertos</div>
+    <div class="skill-row"><b>Dados:</b> Kafka, DuckDB, dlt, Soda, OpenLineage, Terraform, Evidence.dev</div>
+    <div class="skill-row"><b>IA e MLOps:</b> LangGraph, Qdrant, QLoRA, vLLM, PyTorch, Hugging Face, MLflow, DVC, avaliação estatística (intervalo de confiança, teste de McNemar)</div>
+    <div class="skill-row"><b>Back-end:</b> Java (Spring Boot, Quarkus), Kafka, MongoDB</div>
   </section>
 
   <section>
     <h2>Experiência profissional</h2>
 
     <div class="job">
-      <div class="job-head"><span class="job-title">Consultor em Engenharia de Dados e IA — Ser Mais Digital</span>
+      <div class="job-head"><span class="job-title">Consultor em Engenharia de Dados e IA — Noron.dev (antiga Ser Mais Digital)</span>
         <span class="job-meta">fev/2025 – atual · São Paulo (híbrido)</span></div>
-      <div class="job-sub">Cliente de mobilidade e pagamentos (fev/2025 – set/2026): engenheiro de dados responsável pelo produto de auditoria e simulação de vale-pedágio, do desenho à entrega.</div>
+      <div class="job-sub">Aira, produto de IA da Noron.dev (abr/2026 – atual): sou o responsável técnico pelo desenvolvimento e pela operação de uma plataforma de IA corporativa em que cada pessoa pergunta, em português, sobre os arquivos da própria empresa e recebe a resposta com as fontes, em instância dedicada por cliente. Comercializada pela Noron.dev no CONARH 2026.</div>
       <ul>
-        <li>Desenhei e implantei a arquitetura Medallion (Bronze/Silver/Gold) em Databricks (Azure), Unity Catalog e Delta Lake, modelada com dbt, reduzindo o tempo de apuração de até 20 para 2 dias (90%).</li>
-        <li>Construí pipelines orquestrados no Airflow com retry, alertas e dependências, processando dezenas de milhões de transações e logs por mês, com camadas analíticas na casa dos bilhões de linhas.</li>
-        <li>Implantei Data Quality com dbt tests e contracts, masking de PII, backup/restore versionado e KPIs auditáveis.</li>
+        <li>Construí o assistente de IA (Claude com recuperação agêntica nos arquivos da empresa, fontes citadas, somente leitura, restrito às pastas de cada pessoa), os agentes agendados com envio por e-mail e a geração de relatórios em Excel, Word, PDF e PowerPoint.</li>
+        <li>Criei o conjunto de avaliação da IA (mais de 30 casos em 7 categorias, conferidores determinísticos, comparação antes e depois), executado antes de mudar prompt, modelo ou esforço; cobre dado ausente, injeção de prompt e confinamento de leitura.</li>
+        <li>Implementei segurança e governança de dados: permissões por pasta e perfil, trilha de auditoria com encadeamento SHA-256 que torna adulteração detectável, mascaramento de dados pessoais em perguntas e logs, segredos cifrados, retenção automática por tipo de dado e backup diário cifrado fora do servidor.</li>
+        <li>Desenvolvo o back-end assíncrono em Python/FastAPI e PostgreSQL, com migrações versionadas e uma migração de SQLite para PostgreSQL feita em produção, conferida por contagem de linhas por tabela; operação em Docker na AWS, com ambientes separados e deploy só com backup externo confirmado.</li>
+      </ul>
+      <div class="job-sub" style="margin-top:5px">Cliente de mobilidade e pagamentos (fev/2025 – set/2026): engenheiro de dados responsável pelo produto de auditoria e simulação de custos de transporte, do desenho à entrega.</div>
+      <ul>
+        <li>Desenhei e implantei a arquitetura Medallion (bronze, silver e gold) em Databricks (Azure), Unity Catalog e Delta Lake, modelada com dbt, reduzindo o tempo de apuração de até 20 para 2 dias.</li>
+        <li>Construí pipelines orquestrados no Airflow com novas tentativas (retry), alertas e dependências, processando dezenas de milhões de transações e logs por mês.</li>
+        <li>Implantei Data Quality com dbt tests e contracts, masking de PII, backup e restauração versionados e KPIs auditáveis.</li>
         <li>Automatizei relatórios e análises para gestores, com governança de acesso, trilha de auditoria e exportação em CSV, XLSX, Parquet e PDF.</li>
       </ul>
     </div>
 
     <div class="job">
-      <div class="job-head"><span class="job-title">Cientista de Dados — SWM Consultoria</span>
-        <span class="job-meta">out/2023 – jan/2025 · São Paulo (híbrido)</span></div>
+      <div class="job-head"><span class="job-title">SWM Consultoria</span>
+        <span class="job-meta">set/2022 – jan/2025 · São Paulo (híbrido)</span></div>
+      <div class="job-sub">Cientista de Dados (out/2023 – jan/2025)</div>
       <ul>
         <li>Reduzi em 20% os custos logísticos de um cliente com um modelo preditivo de séries temporais.</li>
         <li>Aumentei em 18 pontos percentuais a acurácia de detecção de anomalias com visão computacional (YOLOv5 e OCR), cortando 40% do esforço manual.</li>
-        <li>Entreguei projetos completos de classificação, clusterização e previsão com Scikit-learn, XGBoost e LightGBM, com explicabilidade (SHAP, LIME) apresentada a áreas técnicas e executivas.</li>
+        <li>Entreguei projetos completos de classificação, clusterização e previsão com Scikit-learn, XGBoost e LightGBM, e explicabilidade (SHAP, LIME) apresentada a públicos técnicos e executivos.</li>
       </ul>
-    </div>
-
-    <div class="job">
-      <div class="job-head"><span class="job-title">Engenheiro de Dados — SWM Consultoria</span>
-        <span class="job-meta">set/2022 – ago/2023 · São Paulo (híbrido)</span></div>
+      <div class="job-sub" style="margin-top:5px">Engenheiro de Dados (set/2022 – ago/2023)</div>
       <ul>
-        <li>Reduzi em até 50% o tempo de ingestão e carga com pipelines ELT em AWS (S3, Glue, Redshift) e Apache Spark.</li>
-        <li>Otimizei queries em Redshift, PostgreSQL e BigQuery, com ganhos de até 70% em tempo de execução.</li>
+        <li>Reduzi em até 50% o tempo de ingestão e carga com pipelines ELT na AWS (S3, Glue, Redshift) e Apache Spark.</li>
+        <li>Otimizei consultas SQL em Redshift, PostgreSQL e BigQuery, com ganhos de até 70% em tempo de execução.</li>
         <li>Automatizei ingestão e transformação com Python e jobs agendados no Airflow, eliminando etapas manuais.</li>
       </ul>
     </div>
@@ -112,56 +120,50 @@
 
   <section>
     <h2>Projetos</h2>
+    <p class="note">Open source, com dados públicos ou sintéticos e apoio de IA (Claude). Todos os projetos: <a href="https://github.com/alanjoffre/portfolio">github.com/alanjoffre/portfolio</a></p>
 
     <div class="job">
-      <div class="job-head"><span class="job-title">oss-lakehouse — lakehouse sobre dados reais do GitHub (open-source)</span>
-        <span class="job-meta">github.com/alanjoffre/oss-lakehouse</span></div>
+      <div class="job-head"><span class="job-title">oss-lakehouse — lakehouse sobre dados reais do GitHub</span>
+        <span class="job-meta"><a href="https://github.com/alanjoffre/oss-lakehouse">github.com/alanjoffre/oss-lakehouse</a> · <a href="https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_DE_ESTUDO.md">guia de estudo</a></span></div>
       <ul>
-        <li>Lakehouse bronze → silver → gold em PySpark e Delta Lake sobre 2 milhões de eventos reais do GitHub, com o mesmo código local e preparado para Databricks: job multi-tarefa em bundle validado e Azure (ADLS Gen2, identidade gerenciada, Key Vault, Unity Catalog) em Terraform.</li>
-        <li>18 notebooks executados com a evidência na célula (plano físico, métricas de MERGE, skew real de 12,7% de um único ator), pacote Python com 190 testes e CI: ingestão incremental, MERGE e SCD2, streaming, Delta Lake por dentro, governança e LGPD.</li>
-        <li>IA dentro do pipeline com avaliação: classificação de PII e de títulos contra gabarito, regras de qualidade com aprovação humana e uma cascata em que uma regra simples resolve 36% dos casos sem chamar o modelo.</li>
+        <li>Lakehouse bronze, silver e gold em PySpark e Delta Lake sobre eventos reais do GitHub; o mesmo código roda localmente e no Databricks. Infraestrutura Azure (ADLS Gen2, Key Vault, Unity Catalog) em Terraform, verificada com terraform validate, sem apply.</li>
+        <li>18 notebooks executados e mais de 180 testes com CI: MERGE e SCD2, streaming, governança e LGPD, e IA dentro do pipeline avaliada contra gabarito.</li>
       </ul>
     </div>
 
     <div class="job">
-      <div class="job-head"><span class="job-title">Toll Analytics Platform — plataforma de dados end-to-end (open-source, dados fictícios)</span>
-        <span class="job-meta">GitHub · dashboard ao vivo</span></div>
+      <div class="job-head"><span class="job-title">toll-analytics-platform — plataforma de dados</span>
+        <span class="job-meta"><a href="https://github.com/alanjoffre/toll-analytics-platform">github.com/alanjoffre/toll-analytics-platform</a> · <a href="https://alanjoffre.github.io/toll-analytics-platform/">dashboard ao vivo</a></span></div>
       <ul>
-        <li>Pipeline dlt → dbt (Medallion, contracts, unit tests, Semantic Layer, dbt Mesh) → Airflow + Cosmos → Soda → OpenLineage → Evidence.dev; roda em DuckDB no dev e em Databricks no prod sem alterar o SQL.</li>
-        <li>Streaming near-real-time com Kafka (Redpanda): produtor, consumidor em micro-batch e fato incremental.</li>
-        <li>CI/CD com 10 workflows no GitHub Actions (Slim CI, gate de Data Quality, deploy com promoção staging → prod) e IaC do Databricks em Terraform.</li>
+        <li>Construída do zero com dados sintéticos: dlt, dbt (Medallion, contracts, Semantic Layer, dbt Mesh), Airflow com Cosmos, Soda e Evidence.dev; o mesmo SQL roda em DuckDB no desenvolvimento e em Databricks na produção.</li>
+        <li>CI/CD com 10 workflows no GitHub Actions (Slim CI, gate de Data Quality, promoção de staging para produção) e infraestrutura do Databricks em Terraform.</li>
       </ul>
     </div>
 
     <div class="job">
-      <div class="job-head"><span class="job-title">Aira — plataforma SaaS de IA (projeto próprio, em produção na AWS)</span>
-        <span class="job-meta">abr/2026 – atual</span></div>
+      <div class="job-head"><span class="job-title">RodoIA — engenharia de IA de ponta a ponta</span>
+        <span class="job-meta"><a href="https://github.com/alanjoffre/rodoia">github.com/alanjoffre/rodoia</a> · <a href="https://huggingface.co/spaces/alanjoffre/rodoia-rag">demo ao vivo</a></span></div>
       <ul>
-        <li>Backend assíncrono em Python/FastAPI com PostgreSQL, multi-tenant, incluindo migração de banco em produção sem perda de dados.</li>
-        <li>Integração de LLM (Claude) com controle de custo, RAG, masking de PII e trilha de auditoria com hash-chain.</li>
-        <li>Infraestrutura AWS operada de ponta a ponta: 4 ambientes em EC2 (dev, produção, demo e administração) com Docker, Postgres e Caddy; deploys via Systems Manager, sem SSH exposto; backups automáticos em S3 antes de cada deploy e diariamente; acessos controlados por papéis IAM.</li>
+        <li>Motor de dados escolhido por benchmark (DuckDB 6,7 vezes mais rápido que o Spark) e RAG avaliado com intervalo de confiança e teste de McNemar pareado.</li>
+        <li>Fine-tuning QLoRA servido com vLLM (F1 de 0,13 para 0,77 em NER jurídico), agente em LangGraph e avaliação como gate de CI.</li>
       </ul>
     </div>
 
-    <div class="job">
-      <div class="job-head"><span class="job-title">RodoIA — engenharia de IA de ponta a ponta (open-source)</span>
-        <span class="job-meta">github.com/alanjoffre/rodoia</span></div>
-      <ul>
-        <li>Processamento de 17,2 milhões de linhas com memória limitada; motor escolhido por benchmark (DuckDB 6,7× mais rápido que Spark, 0 divergências nos resultados).</li>
-        <li>RAG avaliado sobre benchmark de terceiros (CUAD, 13.823 trechos anotados por advogados), com ganhos validados por intervalo de confiança e McNemar pareado.</li>
-        <li>Fine-tuning QLoRA servido com vLLM (F1 de 0,13 para 0,77 em NER jurídico) e agente em LangGraph.</li>
-        <li>Avaliação como gate de CI: 30 portões e 297 testes.</li>
-      </ul>
-    </div>
+    <p class="stack-line"><b>Outros:</b> <a href="https://github.com/alanjoffre/ledgerly-bank">Ledgerly Bank</a> — banco digital fictício em Java, com Pix em Saga e Outbox (1.141 testes); <a href="https://github.com/alanjoffre/rodoquery">RodoQuery</a> — Text-to-SQL sobre camada semântica (100% contra 44,5% do SQL direto); <a href="https://github.com/alanjoffre/naoconsta">NãoConsta</a> — RAG contratual avaliado pelo que recusa responder.</p>
   </section>
 
   <section>
     <h2>Formação acadêmica</h2>
     <ul>
-      <li><strong>MBA em Inteligência Artificial</strong> — Estácio · jul/2026 – jun/2027 (em andamento)</li>
-      <li><strong>Especialização em Engenharia de Software com IA</strong> — Universidade Anhanguera · jul/2026 – jan/2027 (em andamento)</li>
-      <li><strong>Tecnólogo em Ciência de Dados</strong> — Universidade Anhanguera · jan/2024 – jun/2026</li>
+      <li><strong>MBA em Inteligência Artificial</strong> — Estácio · jul/2026 – jun/2027 (conclusão prevista)</li>
+      <li><strong>Especialização em Engenharia de Software com IA</strong> — Anhanguera · jul/2026 – jan/2027 (conclusão prevista)</li>
+      <li><strong>Tecnólogo em Ciência de Dados</strong> — Anhanguera · jan/2024 – jun/2026 (concluído)</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>Idiomas</h2>
+    <p>Português (nativo) · Inglês (leitura de documentação técnica)</p>
   </section>
 </body>
 </html>

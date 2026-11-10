@@ -1,22 +1,23 @@
-# 🌐 my-profile — Alan Joffre
+# my-profile — Alan Joffre
 
-Página pessoal (link-in-bio) de **Alan Joffre — Data Engineer · Analytics Engineer · AI Engineer**.
-Single page em HTML/CSS/JS puro, tema dark com gradiente violeta→ciano, hospedada no GitHub Pages.
+Página pessoal de **Alan Joffre, Engenheiro de Dados**: uma página em HTML e CSS puros, publicada no GitHub Pages.
 
-👉 **[alanjoffre.github.io/my-profile](https://alanjoffre.github.io/my-profile/)**
+**[alanjoffre.github.io/my-profile](https://alanjoffre.github.io/my-profile/)**
 
-## ✨ Destaques
+## O que tem na página
 
-- Hero com avatar, posicionamento atual e status "aberto a oportunidades"
-- Stack em destaque (Python, dbt, Databricks, Airflow, AWS · RAG, LLM, QLoRA, vLLM, LangGraph…)
-- Cards dos projetos principais (RodoIA, toll-analytics-platform, Aira, data-science)
-- Links para LinkedIn, currículo (PDF) e GitHub
-- 100% responsivo · sem dependências · carregamento leve (assets < 700 KB)
+- Topo com foto, cargo e uma frase de apresentação.
+- Três botões: currículo (PDF), LinkedIn e GitHub.
+- Três projetos em destaque (oss-lakehouse, toll-analytics-platform e RodoIA), os mesmos do currículo, cada um com um resultado medido, e o link para o [portfólio](https://github.com/alanjoffre/portfolio).
+- A Aira, produto de IA da Noron, em produção, e a stack.
 
-## 🚀 Tecnologias
+## Como é feita
 
-HTML · CSS (gradientes, glassmorphism, grid) · JavaScript · Git/GitHub
+- Fonte do sistema e nenhum pedido a serviço externo: a página carrega só os próprios arquivos.
+- Tema escuro e tema claro, conforme a preferência do aparelho (`prefers-color-scheme`).
+- Uma coluna no celular e dois blocos a partir de 760 px de largura.
+- Contraste de texto acima do mínimo da WCAG AA (4,5:1) nos dois temas.
 
-## 💻 Rodar localmente
+## Rodar localmente
 
-Abra o `index.html` no navegador — não há build nem dependências.
+Abra o `index.html` no navegador. Não há build nem dependências.

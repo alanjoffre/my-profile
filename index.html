@@ -1,159 +1,96 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
 
-    <title>Alan Joffre · Data Engineer / Analytics Engineer / AI Engineer</title>
-    <meta name="description" content="Alan Joffre — Data Engineer · Analytics Engineer · AI Engineer. Lakehouse (dbt, Databricks, Delta Lake, Airflow, PySpark) e Engenharia de IA de produção (RAG, fine-tuning QLoRA, vLLM, LangGraph, MLOps)." />
+    <title>Alan Joffre · Engenheiro de Dados</title>
+    <meta name="description" content="Alan Joffre, Engenheiro de Dados na Noron.dev: lakehouse, Data Quality e IA aplicada com avaliação." />
     <meta name="author" content="Alan Joffre" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Alan Joffre · Data Engineer / Analytics Engineer / AI Engineer" />
-    <meta property="og:description" content="Produtos de dados end-to-end (lakehouse, dbt, Databricks, Airflow) e Engenharia de IA de produção (RAG, fine-tuning, vLLM, LangGraph, MLOps)." />
-    <meta property="og:image" content="./assets/avatar-2026.jpg" />
+    <meta property="og:url" content="https://alanjoffre.github.io/my-profile/" />
+    <meta property="og:title" content="Alan Joffre · Engenheiro de Dados" />
+    <meta property="og:description" content="Alan Joffre, Engenheiro de Dados na Noron.dev: lakehouse, Data Quality e IA aplicada com avaliação." />
+    <meta property="og:image" content="https://alanjoffre.github.io/my-profile/assets/avatar-2026.jpg" />
+    <meta name="twitter:card" content="summary" />
 
     <link rel="icon" href="./assets/avatar-2026.jpg" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="bg-grid" aria-hidden="true"></div>
-    <div class="bg-glow glow-1" aria-hidden="true"></div>
-    <div class="bg-glow glow-2" aria-hidden="true"></div>
-
     <main id="container">
-      <!-- HERO -->
       <header class="hero">
-        <div class="avatar-wrap">
-          <img class="avatar" src="./assets/avatar-2026.jpg" alt="Alan Joffre" />
-          <span class="status-dot" title="Aberto a oportunidades"></span>
-        </div>
-        <h1>Alan Joffre</h1>
-        <p class="role">Engenheiro de Dados <span>·</span> IA aplicada</p>
-        <p class="tagline">
-          Produtos de dados <strong>end-to-end</strong> — da arquitetura
-          <strong>lakehouse</strong> à entrega de análises prontas para decisão — e
-          <strong>Engenharia de IA de produção</strong> (RAG, fine-tuning, agentes, MLOps).
-        </p>
-        <div class="meta">
-          <span class="chip-loc">📍 São Paulo, Brasil</span>
-          <span class="chip-open"><span class="pulse"></span> Aberto a oportunidades</span>
+        <img class="avatar" src="./assets/avatar-2026.jpg" alt="Alan Joffre" width="112" height="112" />
+        <div class="hero-text">
+          <h1>Alan Joffre</h1>
+          <p class="role">Engenheiro de Dados · Noron.dev</p>
+          <p class="tagline">
+            Produtos de dados de ponta a ponta, do lakehouse à IA aplicada com avaliação. Sou o responsável técnico pelo
+            desenvolvimento e pela operação da Aira, produto de IA da Noron.
+          </p>
+          <p class="meta">São Paulo, SP <span class="sep">·</span> <span class="open">Aberto a oportunidades</span></p>
         </div>
       </header>
 
-      <!-- STACK -->
-      <section class="stack" aria-label="Stack">
-        <span>Python</span><span>SQL</span><span>dbt</span><span>Databricks</span>
-        <span>Delta Lake</span><span>Unity Catalog</span><span>PySpark</span>
-        <span>Airflow</span><span>AWS</span><span>Azure</span><span>Terraform</span>
-        <span>Data Quality</span><span>Lineage</span>
-        <span>RAG</span><span>LLM</span><span>QLoRA</span><span>vLLM</span>
-        <span>LangGraph</span><span>PyTorch</span><span>MLOps</span>
-      </section>
-
-      <!-- PROJETOS -->
-      <section class="projects" aria-label="Projetos em destaque">
-        <h2>Projetos em destaque</h2>
-
-        <a class="card" href="https://github.com/alanjoffre/oss-lakehouse" target="_blank" rel="noopener">
-          <div class="card-top">
-            <span class="card-icon">🧱</span>
-            <span class="card-tag">Open Source · Dados</span>
-          </div>
-          <h3>oss-lakehouse — lakehouse sobre dados reais do GitHub</h3>
-          <p>18 notebooks executados e um pacote Python com 190 testes: ingestão incremental, MERGE e SCD2, streaming, performance no Spark, Delta Lake por dentro, governança/LGPD, IA no pipeline com avaliação e Azure em Terraform.</p>
-          <span class="card-link">Ver no GitHub →</span>
-        </a>
-
-        <a class="card" href="https://github.com/alanjoffre/rodoia" target="_blank" rel="noopener">
-          <div class="card-top">
-            <span class="card-icon">🤖</span>
-            <span class="card-tag">Open Source · IA</span>
-          </div>
-          <h3>RodoIA — AI Engineering ponta a ponta</h3>
-          <p>Do backprop à mão ao serving em produção sobre dados públicos da ANTT: RAG avaliado + fine-tuning QLoRA (F1 0,13→0,77) + agente LangGraph + MLOps com gate no CI. hit@5 0,62 · roteamento 0,95 · gate 12/12.</p>
-          <span class="card-link">Ver no GitHub →</span>
-        </a>
-
-        <a class="card" href="https://github.com/alanjoffre/toll-analytics-platform" target="_blank" rel="noopener">
-          <div class="card-top">
-            <span class="card-icon">🏗️</span>
-            <span class="card-tag">Open Source</span>
-          </div>
-          <h3>toll-analytics-platform</h3>
-          <p>Plataforma de dados end-to-end: dlt → dbt (Medallion, contracts, Semantic Layer) → Airflow → Soda → OpenLineage → Evidence.dev. CI/CD + Terraform.</p>
-          <span class="card-link">Ver no GitHub →</span>
-        </a>
-
-        <div class="card">
-          <div class="card-top">
-            <span class="card-icon">🧠</span>
-            <span class="card-tag">Produção · AWS</span>
-          </div>
-          <h3>Aira — SaaS de IA</h3>
-          <p>Backend assíncrono Python/FastAPI, PostgreSQL multi-org, integração LLM (Anthropic Claude) com controle de custo, CI/CD com SAST e segurança ponta a ponta.</p>
-          <span class="card-link">🔒 Produção privada</span>
-        </div>
-
-        <a class="card" href="https://github.com/alanjoffre/data-science" target="_blank" rel="noopener">
-          <div class="card-top">
-            <span class="card-icon">📊</span>
-            <span class="card-tag">Portfólio ML</span>
-          </div>
-          <h3>data-science</h3>
-          <p>ML aplicado: séries temporais, classificação, clusterização, NLP e apps em Streamlit publicados na web.</p>
-          <span class="card-link">Ver projetos →</span>
-        </a>
-      </section>
-
-      <!-- LINKS PRINCIPAIS -->
-      <nav class="links" aria-label="Links">
-        <a href="https://huggingface.co/spaces/alanjoffre/rodoia-rag" target="_blank" rel="noopener">
-          <span class="ic">🤖</span> Demo ao vivo · RodoIA (RAG no navegador)
-        </a>
-        <a href="https://alanjoffre.github.io/toll-analytics-platform/" target="_blank" rel="noopener">
-          <span class="ic">📊</span> Dashboard ao vivo · toll-analytics-platform
-        </a>
-        <a href="https://linkedin.com/in/alanjoffre" target="_blank" rel="noopener">
-          <span class="ic">in</span> LinkedIn
-        </a>
-        <a href="./assets/curriculo_alanjoffre_ptbr.pdf" target="_blank" rel="noopener">
-          <span class="ic">⬇</span> Currículo (PT-BR)
-        </a>
-        <a href="https://github.com/alanjoffre" target="_blank" rel="noopener">
-          <span class="ic">{ }</span> GitHub
-        </a>
+      <nav class="actions" aria-label="Links principais">
+        <a class="btn primary" href="./assets/curriculo_alanjoffre_ptbr.pdf" target="_blank" rel="noopener">Baixar currículo (PDF)</a>
+        <a class="btn" href="https://www.linkedin.com/in/alanjoffre" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/alanjoffre" target="_blank" rel="noopener">GitHub</a>
       </nav>
 
-      <!-- SOCIAL -->
-      <div class="social">
-        <a href="https://github.com/alanjoffre" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.7 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg>
-        </a>
-        <a href="https://linkedin.com/in/alanjoffre" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33 0-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
-        </a>
-        <a href="https://wa.me/5511915472650" target="_blank" rel="noopener" aria-label="WhatsApp" title="WhatsApp">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M.06 24l1.68-6.13A11.82 11.82 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.4 3.49 11.8 11.8 0 0 1 3.48 8.41c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.69-1.45L.06 24zm6.6-3.8c1.68.99 3.28 1.58 5.4 1.58 5.45 0 9.89-4.43 9.89-9.88 0-5.46-4.43-9.89-9.88-9.89C6.6 1.99 2.17 6.42 2.17 11.9c0 2.2.65 3.85 1.74 5.58l-1 3.65 3.75-.93zm11.36-5.29c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.01-1.04 2.48s1.06 2.88 1.21 3.08c.15.2 2.1 3.2 5.07 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.18-1.41z"/></svg>
-        </a>
-        <a href="mailto:alanjoffre01@gmail.com" aria-label="E-mail" title="E-mail">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg>
-        </a>
+      <div class="grid">
+        <section class="projects" aria-labelledby="t-projetos">
+          <h2 id="t-projetos">Projetos em destaque</h2>
+
+          <article class="card">
+            <p class="tag">Open Source · Dados</p>
+            <h3><a href="https://github.com/alanjoffre/oss-lakehouse" target="_blank" rel="noopener">oss-lakehouse — lakehouse sobre dados reais do GitHub</a></h3>
+            <p>18 notebooks executados e mais de 180 testes, com CI.</p>
+            <p class="more"><a href="https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_DE_ESTUDO.md" target="_blank" rel="noopener">Guia de estudo com 199 perguntas</a></p>
+          </article>
+
+          <article class="card">
+            <p class="tag">Open Source · Dados</p>
+            <h3><a href="https://github.com/alanjoffre/toll-analytics-platform" target="_blank" rel="noopener">toll-analytics-platform — plataforma de dados de ponta a ponta</a></h3>
+            <p>dlt, dbt, Airflow e Soda, com o mesmo SQL em DuckDB e Databricks; CI/CD com 10 workflows.</p>
+            <p class="more"><a href="https://alanjoffre.github.io/toll-analytics-platform/" target="_blank" rel="noopener">Dashboard ao vivo</a></p>
+          </article>
+
+          <article class="card">
+            <p class="tag">Open Source · IA</p>
+            <h3><a href="https://github.com/alanjoffre/rodoia" target="_blank" rel="noopener">RodoIA — engenharia de IA de ponta a ponta</a></h3>
+            <p>Fine-tuning com F1 de 0,13 para 0,77 e avaliação como gate de CI.</p>
+            <p class="more"><a href="https://huggingface.co/spaces/alanjoffre/rodoia-rag" target="_blank" rel="noopener">Demo ao vivo</a></p>
+          </article>
+
+          <p class="all"><a href="https://github.com/alanjoffre/portfolio" target="_blank" rel="noopener">Ver todos os estudos de caso no portfólio →</a></p>
+        </section>
+
+        <aside class="side">
+          <section aria-labelledby="t-producao">
+            <h2 id="t-producao">Em produção</h2>
+            <p><strong>Aira</strong>, produto de IA da Noron, em produção na AWS: Python/FastAPI, PostgreSQL e LLM (Claude) com controle de custo. Código fechado.</p>
+          </section>
+
+          <section aria-labelledby="t-stack">
+            <h2 id="t-stack">Stack</h2>
+            <dl class="stack">
+              <dt>Dados</dt><dd>Python · SQL · PySpark · Databricks · dbt · Airflow</dd>
+              <dt>IA</dt><dd>RAG · LLM · QLoRA · LangGraph</dd>
+              <dt>Cloud</dt><dd>AWS · Azure · Terraform</dd>
+              <dt>Back-end</dt><dd>FastAPI · Java (Spring Boot)</dd>
+            </dl>
+          </section>
+        </aside>
       </div>
 
       <footer>
-        <span>© <span id="year"></span> Alan Joffre</span>
-        <span class="dot">·</span>
-        <a href="https://github.com/alanjoffre" target="_blank" rel="noopener">github.com/alanjoffre</a>
+        <span>© <span id="year">2026</span> Alan Joffre</span>
+        <span class="sep">·</span>
+        <a href="mailto:alanjoffre01@gmail.com">E-mail</a>
       </footer>
     </main>
 
