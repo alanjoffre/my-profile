@@ -57,7 +57,7 @@
   <section>
     <h2>Resumo</h2>
     <p>Engenheiro de Dados com mais de 6 anos de experiência em dados e IA, dos quais mais de 5 anos em engenharia de dados:
-    arquitetura, modelagem, orquestração, qualidade e entrega a gestores. Na consultoria, desenhei e entreguei um lakehouse
+    arquitetura, modelagem, orquestração, qualidade e entrega a gestores. Alocado em cliente de mobilidade e pagamentos, desenhei e entreguei um lakehouse
     em Databricks e dbt que processava dezenas de milhões de registros por mês e reduziu o tempo de apuração de até 20 para 2 dias.
     Hoje sou o responsável técnico pelo desenvolvimento e pela operação da Aira, produto de IA da Noron.dev (Python/FastAPI, SvelteKit e TypeScript,
     LLM com recuperação agêntica sobre arquivos, agentes, avaliação de IA, PostgreSQL, AWS). Mantenho projetos open source
@@ -68,14 +68,14 @@
     <h2>Competências técnicas</h2>
     <div class="group">Uso profissional</div>
     <div class="skill-row"><b>Engenharia de dados:</b> Python, SQL, Apache Spark (PySpark), Databricks (Unity Catalog, Delta Lake), dbt, Airflow, Kafka, DuckDB, ETL/ELT, Data Warehouse e modelagem dimensional</div>
-    <div class="skill-row"><b>Bancos e cloud:</b> PostgreSQL, Redshift, BigQuery, AWS (EC2, S3, IAM, Glue), Azure (Databricks), Docker, GitHub Actions</div>
+    <div class="skill-row"><b>Bancos e cloud:</b> PostgreSQL, Redshift, BigQuery, AWS (EC2, S3, IAM, Glue), Azure (Databricks), Docker, Terraform, GitHub Actions</div>
     <div class="skill-row"><b>Qualidade e governança:</b> dbt tests e contracts, masking de PII, trilha de auditoria, KPIs auditáveis</div>
-    <div class="skill-row"><b>IA, ML e back-end:</b> LLM (Claude), RAG, FastAPI (assíncrono), Scikit-learn, XGBoost, LightGBM, visão computacional (YOLOv5, OCR), SHAP</div>
+    <div class="skill-row"><b>IA, ML e back-end:</b> LLM, RAG, FastAPI (assíncrono), SvelteKit, TypeScript, Scikit-learn, XGBoost, LightGBM, visão computacional (YOLOv5, OCR), SHAP</div>
     <div class="skill-row"><b>BI:</b> Power BI (DAX)</div>
     <div class="group">Em projetos abertos</div>
-    <div class="skill-row"><b>Dados:</b> dlt, Soda, OpenLineage, Terraform, Evidence.dev</div>
+    <div class="skill-row"><b>Dados:</b> dlt, Soda, OpenLineage, Evidence.dev</div>
     <div class="skill-row"><b>IA e MLOps:</b> LangGraph, Qdrant, QLoRA, vLLM, PyTorch, Hugging Face, MLflow, DVC, avaliação estatística (intervalo de confiança, teste de McNemar)</div>
-    <div class="skill-row"><b>Back-end e front-end:</b> Java (Spring Boot, Quarkus), Kafka, MongoDB; SvelteKit e TypeScript</div>
+    <div class="skill-row"><b>Back-end e front-end:</b> Java (Spring Boot, Quarkus), MongoDB; React e TypeScript</div>
   </section>
 
   <section>
@@ -86,7 +86,7 @@
         <span class="job-meta">fev/2025 – atual · São Paulo (híbrido)</span></div>
       <div class="job-sub">Aira, produto de IA da Noron.dev (abr/2026 – atual): sou o responsável técnico pelo desenvolvimento e pela operação de uma plataforma de IA corporativa em que cada pessoa pergunta, em português, sobre os arquivos da própria empresa e recebe a resposta com as fontes, em instância dedicada por cliente. Oferecida ao mercado pela Noron.dev no CONARH 2026.</div>
       <ul>
-        <li>Conduzi o desenvolvimento do assistente de IA (Claude com recuperação agêntica nos arquivos da empresa, fontes citadas, somente leitura, restrito às pastas de cada pessoa), dos agentes agendados com envio por e-mail e da geração de relatórios em Excel, Word, PDF e PowerPoint.</li>
+        <li>Conduzi o desenvolvimento do assistente de IA (LLM com recuperação agêntica nos arquivos da empresa, fontes citadas, somente leitura, restrito às pastas de cada pessoa), dos agentes agendados com envio por e-mail e da geração de relatórios em Excel, Word, PDF e PowerPoint.</li>
         <li>Conduzi a criação do conjunto de avaliação da IA (mais de 30 casos em 7 categorias, conferidores determinísticos, comparação antes e depois), executado antes de mudar prompt, modelo ou esforço; cobre dado ausente, injeção de prompt e confinamento de leitura.</li>
         <li>Respondo pelo desenho de segurança e governança de dados: permissões por pasta e perfil, trilha de auditoria com encadeamento SHA-256 que torna adulteração detectável, mascaramento de dados pessoais em perguntas e logs, segredos cifrados, retenção automática por tipo de dado e backup diário cifrado fora do servidor.</li>
         <li>Respondo pelo back-end assíncrono em Python/FastAPI e PostgreSQL, com migrações versionadas e uma migração de SQLite para PostgreSQL feita em produção, conferida por contagem de linhas por tabela; operação em Docker na AWS, com ambientes separados e deploy só com backup externo confirmado.</li>
@@ -113,7 +113,8 @@
       <ul>
         <li>Reduzi em até 50% o tempo de ingestão e carga com pipelines ELT na AWS (S3, Glue, Redshift) e Apache Spark.</li>
         <li>Otimizei consultas SQL em Redshift, PostgreSQL e BigQuery, com ganhos de até 70% em tempo de execução.</li>
-        <li>Automatizei ingestão e transformação com Python e jobs agendados no Airflow, eliminando etapas manuais.</li>
+        <li>Automatizei ingestão e transformação com Python e jobs agendados no Airflow, eliminando etapas manuais, e ingestão em tempo real com Kafka.</li>
+        <li>Infraestrutura como código em Terraform e dashboards em Power BI para as áreas de negócio.</li>
         <li>Modelei o Data Warehouse no Redshift (fatos e dimensões) e o data lake no S3 em Parquet, particionado e catalogado no Glue, com consulta pelo Athena.</li>
         <li>Implementei cargas incrementais e CDC com reprocessamento idempotente, validações de Data Quality e alertas de falha nos pipelines.</li>
       </ul>
@@ -122,7 +123,7 @@
 
   <section>
     <h2>Projetos</h2>
-    <p class="note">Open source, com dados públicos ou sintéticos e apoio de IA (Claude). Todos os projetos: <a href="https://github.com/alanjoffre/portfolio">github.com/alanjoffre/portfolio</a></p>
+    <p class="note">Open source, com dados públicos ou sintéticos e apoio de assistente de IA. Todos os projetos: <a href="https://github.com/alanjoffre/portfolio">github.com/alanjoffre/portfolio</a></p>
 
     <div class="job">
       <div class="job-head"><span class="job-title">oss-lakehouse — lakehouse sobre dados reais do GitHub</span>
@@ -137,8 +138,8 @@
       <div class="job-head"><span class="job-title">toll-analytics-platform — plataforma de dados</span>
         <span class="job-meta"><a href="https://github.com/alanjoffre/toll-analytics-platform">github.com/alanjoffre/toll-analytics-platform</a> · <a href="https://alanjoffre.github.io/toll-analytics-platform/">dashboard ao vivo</a></span></div>
       <ul>
-        <li>Construída do zero com dados sintéticos: dlt, dbt (Medallion, contracts, Semantic Layer, dbt Mesh), Airflow com Cosmos, Soda e Evidence.dev; o mesmo SQL roda em DuckDB no desenvolvimento e em Databricks na produção.</li>
-        <li>CI/CD com 10 workflows no GitHub Actions (Slim CI, gate de Data Quality, promoção de staging para produção) e infraestrutura do Databricks em Terraform.</li>
+        <li>Construída do zero com dados sintéticos: dlt, dbt (Medallion, contracts, Semantic Layer, dbt Mesh), Airflow com Cosmos, Soda e Evidence.dev; executada em DuckDB e desenhada para Databricks sem mudar o SQL.</li>
+        <li>CI/CD com 10 workflows no GitHub Actions (Slim CI, gate de Data Quality, promoção de staging para produção) e infraestrutura do Databricks em Terraform, validada sem apply.</li>
       </ul>
     </div>
 
