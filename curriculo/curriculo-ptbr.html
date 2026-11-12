@@ -81,7 +81,7 @@
         <span class="job-meta">fev/2025 – atual · São Paulo (híbrido)</span></div>
       <div class="job-sub">Aira, produto de IA da Noron.dev (abr/2026 – atual): sou o responsável técnico pelo desenvolvimento e pela operação de uma plataforma de IA corporativa em que cada pessoa pergunta, em português, sobre os arquivos da própria empresa e recebe a resposta com as fontes, em instância dedicada por cliente. Oferecida ao mercado pela Noron.dev no CONARH 2026.</div>
       <ul>
-        <li>Conduzi o desenvolvimento do assistente de IA (LLM com recuperação agêntica nos arquivos da empresa, fontes citadas, somente leitura, restrito às pastas de cada pessoa), dos agentes agendados com envio por e-mail e da geração de relatórios em Excel, Word, PDF e PowerPoint.</li>
+        <li>Conduzi o desenvolvimento do assistente de IA (LLM com recuperação agêntica nos arquivos da empresa, fontes citadas, somente leitura, restrito às pastas que cada pessoa tem permissão de ver), dos agentes agendados com envio por e-mail e da geração de relatórios em Excel, Word, PDF e PowerPoint.</li>
         <li>Conduzi a criação do conjunto de avaliação da IA (mais de 30 casos em 7 categorias, conferidores determinísticos, comparação antes e depois), executado antes de mudar prompt, modelo ou esforço; cobre dado ausente, injeção de prompt e confinamento de leitura.</li>
         <li>Respondo pelo desenho de segurança e governança de dados: permissões por pasta e perfil, auditoria encadeada por SHA-256, mascaramento de dados pessoais, segredos cifrados, retenção automática e backup diário cifrado fora do servidor.</li>
         <li>Respondo pelo back-end assíncrono em Python/FastAPI e PostgreSQL, incluindo a migração de SQLite para PostgreSQL em produção, conferida tabela a tabela; Docker na AWS, com deploy só após backup externo confirmado.</li>
@@ -92,6 +92,7 @@
         <li>Construí pipelines orquestrados no Airflow com novas tentativas (retry), alertas e dependências, processando dezenas de milhões de transações e logs por mês; a principal tabela de eventos chega a 1 bilhão de registros mensais.</li>
         <li>Implantei Data Quality com dbt tests e contracts, masking de PII, backup e restauração versionados e KPIs auditáveis.</li>
         <li>Automatizei relatórios e análises para gestores, com governança de acesso, trilha de auditoria e exportação em CSV, XLSX, Parquet e PDF.</li>
+        <li>Construí uma ferramenta de IA com RAG para o treinamento da equipe comercial; aprovada e em produção.</li>
       </ul>
     </div>
 
@@ -114,7 +115,7 @@
         <li>Automatizei ingestão e transformação com Python e jobs agendados no Airflow, eliminando etapas manuais, e ingestão em tempo real com Kafka.</li>
         <li>Infraestrutura como código em Terraform e dashboards em Power BI para as áreas de negócio.</li>
         <li>Modelei o Data Warehouse no Redshift (fatos e dimensões) e o data lake no S3 em Parquet, particionado e catalogado no Glue, com consulta pelo Athena.</li>
-        <li>Implementei cargas incrementais e CDC com reprocessamento idempotente, validações de Data Quality e alertas de falha nos pipelines.</li>
+        <li>Implementei cargas incrementais e CDC com reprocessamento idempotente, validações de Data Quality e alertas de falha.</li>
       </ul>
     </div>
   </section>
@@ -150,7 +151,7 @@
       </ul>
     </div>
 
-    <p class="stack-line"><b>Outros:</b> <a href="https://github.com/alanjoffre/ledgerly-bank">Ledgerly Bank</a> — banco digital fictício em Java, com Pix em Saga e Outbox (1.141 testes); <a href="https://github.com/alanjoffre/rodoquery">RodoQuery</a> — Text-to-SQL sobre camada semântica (100% contra 44,5% do SQL direto); <a href="https://github.com/alanjoffre/naoconsta">NãoConsta</a> — RAG contratual avaliado pelo que recusa responder.</p>
+    <p class="stack-line"><b>Outros:</b> <a href="https://github.com/alanjoffre/ledgerly-bank">Ledgerly Bank</a> — banco digital fictício em Java, com Pix em Saga e Outbox (1.141 testes); <a href="https://github.com/alanjoffre/rodoquery">RodoQuery</a> — Text-to-SQL sobre camada semântica (100% contra 44,5% do SQL direto, n=146; o 100% é teto do instrumento); <a href="https://github.com/alanjoffre/naoconsta">NãoConsta</a> — RAG contratual avaliado pelo que recusa responder.</p>
   </section>
 
   <section>
