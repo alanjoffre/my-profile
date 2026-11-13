@@ -68,7 +68,7 @@
     <div class="skill-row"><b>IA, ML e back-end:</b> LLM, RAG, FastAPI (assíncrono), SvelteKit, TypeScript, Machine Learning (ML), Scikit-learn, XGBoost, LightGBM, visão computacional (YOLOv5, OCR), SHAP</div>
     <div class="skill-row"><b>BI:</b> Power BI (DAX)</div>
     <div class="group">Em projetos abertos</div>
-    <div class="skill-row"><b>Dados:</b> dlt, Soda, OpenLineage, Evidence.dev</div>
+    <div class="skill-row"><b>Dados:</b> dlt, Soda, OpenLineage, Evidence.dev, Debezium (CDC)</div>
     <div class="skill-row"><b>IA e MLOps:</b> LangGraph, Qdrant, QLoRA, vLLM, PyTorch, Hugging Face, MLflow, DVC, avaliação estatística (intervalo de confiança, teste de McNemar)</div>
     <div class="skill-row"><b>Back-end e front-end:</b> Java (Spring Boot, Quarkus), MongoDB; React e TypeScript</div>
   </section>
@@ -143,11 +143,19 @@
     </div>
 
     <div class="job">
+      <div class="job-head"><span class="job-title">pg-cdc-lakehouse — CDC conferido contra a origem, com dado sintético</span>
+        <span class="job-meta"><a href="https://github.com/alanjoffre/pg-cdc-lakehouse">github.com/alanjoffre/pg-cdc-lakehouse</a></span></div>
+      <ul>
+        <li>PostgreSQL → Debezium → Kafka → Parquet e Delta Lake, com MERGE que só avança e estado final idempotente.</li>
+        <li>3 falhas injetadas e 1 operação normal: origem igual ao destino em contagem, chaves, conteúdo e hash.</li>
+      </ul>
+    </div>
+
+    <div class="job">
       <div class="job-head"><span class="job-title">RodoIA — engenharia de IA de ponta a ponta</span>
         <span class="job-meta"><a href="https://github.com/alanjoffre/rodoia">github.com/alanjoffre/rodoia</a> · <a href="https://huggingface.co/spaces/alanjoffre/rodoia-rag">demo ao vivo</a></span></div>
       <ul>
-        <li>Motor de dados escolhido por benchmark (DuckDB 6,7 vezes mais rápido que o Spark) e RAG avaliado com intervalo de confiança e teste de McNemar pareado.</li>
-        <li>Fine-tuning QLoRA servido com vLLM (F1 de 0,13 para 0,77 em NER jurídico), agente em LangGraph e avaliação como gate de CI.</li>
+        <li>Fine-tuning QLoRA servido com vLLM (F1 de 0,13 para 0,77), agente em LangGraph e avaliação como gate de CI.</li>
       </ul>
     </div>
 
