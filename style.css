@@ -184,7 +184,7 @@ footer { margin-top: 48px; padding-bottom: 32px; color: var(--muted); font-size:
 
 /* Computador */
 @media (min-width: 880px) {
-  .projects { grid-template-columns: repeat(3, 1fr); }
+  .projects { grid-template-columns: repeat(2, 1fr); }
   .stack { grid-template-columns: repeat(4, 1fr); gap: 24px; }
 }
 

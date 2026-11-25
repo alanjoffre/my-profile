@@ -45,7 +45,7 @@
   <header>
     <h1>Alan Joffre</h1>
     <div class="role">Engenheiro de Dados</div>
-    <div class="contact">Lakehouse (Databricks · dbt · Delta Lake · Airflow) · Data Quality e governança · IA aplicada</div>
+    <div class="contact">Lakehouse (Databricks · dbt · Delta Lake · Airflow) · Azure e AWS · Data Quality e governança · IA aplicada</div>
     <div class="contact">
       <span>São Paulo, SP</span><span class="sep">|</span>
       <span>alanjoffre01@gmail.com</span><span class="sep">|</span>
@@ -62,9 +62,9 @@
   <section>
     <h2>Competências técnicas</h2>
     <div class="group">Uso profissional</div>
-    <div class="skill-row"><b>Engenharia de dados:</b> Python, SQL, Apache Spark (PySpark), Databricks (Unity Catalog, Delta Lake), dbt, Apache Airflow, Kafka, DuckDB, ETL/ELT, Data Warehouse e modelagem dimensional</div>
-    <div class="skill-row"><b>Bancos e cloud:</b> PostgreSQL, Redshift, BigQuery, AWS (EC2, S3, IAM, Glue), Azure (Databricks), Docker, Terraform, Git, GitHub Actions</div>
-    <div class="skill-row"><b>Qualidade e governança:</b> dbt tests e contracts, masking de PII (LGPD), trilha de auditoria, KPIs auditáveis</div>
+    <div class="skill-row"><b>Engenharia de dados:</b> Python, SQL, Apache Spark (PySpark), Databricks (Unity Catalog, Delta Lake), dbt, Apache Airflow, Azure Data Factory, Kafka, DuckDB, ETL/ELT, Data Warehouse e modelagem dimensional</div>
+    <div class="skill-row"><b>Bancos e cloud:</b> PostgreSQL, Redshift, BigQuery, AWS (EC2, S3, IAM, Glue), Azure (Databricks, ADLS Gen2), Docker, Terraform, Git, GitHub Actions, Azure DevOps</div>
+    <div class="skill-row"><b>Qualidade e governança:</b> dbt tests e contracts, masking de PII (LGPD), trilha de auditoria, KPIs auditáveis, Azure Key Vault</div>
     <div class="skill-row"><b>IA, ML e back-end:</b> LLM, RAG, FastAPI (assíncrono), SvelteKit, TypeScript, Machine Learning (ML), Scikit-learn, XGBoost, LightGBM, visão computacional (YOLOv5, OCR), SHAP</div>
     <div class="skill-row"><b>BI:</b> Power BI (DAX)</div>
     <div class="group">Em projetos abertos</div>
@@ -128,8 +128,17 @@
       <div class="job-head"><span class="job-title">oss-lakehouse — lakehouse sobre dados reais do GitHub</span>
         <span class="job-meta"><a href="https://github.com/alanjoffre/oss-lakehouse">github.com/alanjoffre/oss-lakehouse</a> · <a href="https://github.com/alanjoffre/oss-lakehouse/blob/main/GUIA_TECNICO.md">guia técnico</a></span></div>
       <ul>
-        <li>Lakehouse bronze, silver e gold em PySpark e Delta Lake sobre eventos reais do GitHub; o mesmo código roda localmente e no Databricks. Infraestrutura Azure (ADLS Gen2, Key Vault, Unity Catalog) em Terraform, verificada com terraform validate, sem apply.</li>
-        <li>18 notebooks executados e mais de 180 testes com CI: MERGE e SCD2, streaming, governança e LGPD, e IA dentro do pipeline avaliada contra gabarito.</li>
+        <li>Lakehouse bronze, silver e gold em PySpark e Delta Lake sobre eventos reais do GitHub; o mesmo código roda localmente e no Databricks.</li>
+        <li>18 notebooks executados e mais de 180 testes com CI: MERGE e SCD2, streaming, LGPD e IA avaliada contra gabarito.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job-head"><span class="job-title">cvm-azure-data-lake — desenho de referência, validado localmente</span>
+        <span class="job-meta"><a href="https://github.com/alanjoffre/cvm-azure-data-lake">github.com/alanjoffre/cvm-azure-data-lake</a></span></div>
+      <ul>
+        <li>Carga incremental com Azure Data Factory, ADLS Gen2, Azure Functions, Key Vault, Terraform e Azure Pipelines.</li>
+        <li>Mês republicado pela CVM, reprocessado e conferido por SHA-256: 32/32 com dado real; não aplicado na Azure.</li>
       </ul>
     </div>
 
